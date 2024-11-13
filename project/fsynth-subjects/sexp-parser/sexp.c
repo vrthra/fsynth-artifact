@@ -498,7 +498,7 @@ sexp_t *read(FILE *fp, bool inRoot)
     char buf[256] = {0};
     int i = 0;
     char c;
-    int int_value;
+    int int_value=0;
 
 step1:
     if ((c = fgetc(fp)) == EOF)
